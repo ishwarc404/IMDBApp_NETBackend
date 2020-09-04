@@ -1,17 +1,15 @@
 ﻿<Properties StartupConfiguration="{2DFAA04A-25C9-48D2-B8D0-F7C08B862F98}|IMDBApp">
-  <MonoDevelop.Ide.Workbench ActiveDocument="IMDBApp/Controllers/ActorController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="IMDBApp/Program.cs">
     <Files>
-      <File FileName="IMDBApp/Startup.cs" Line="1" Column="1" />
-      <File FileName="IMDBApp/appsettings.json" />
+      <File FileName="IMDBApp/Startup.cs" Line="43" Column="13" />
+      <File FileName="IMDBApp/appsettings.json" Line="12" Column="21" />
       <File FileName="IMDBApp/Modules/Actor.cs" />
       <File FileName="IMDBApp/Modules/Movie.cs" />
-      <File FileName="IMDBApp/Controllers/ActorController.cs" Line="27" Column="27" />
+      <File FileName="IMDBApp/Controllers/ActorController.cs" Line="27" Column="1" />
       <File FileName="IMDBApp/Service/ActorService.cs" />
       <File FileName="IMDBApp/Service/MovieService.cs" />
       <File FileName="IMDBApp/Controllers/MovieController.cs" />
-      <File FileName="IMDBApp/Repository/ActorService.cs" />
-      <File FileName="IMDBApp/Repository/MovieService.cs" />
-      <File FileName="IMDBApp/Program.cs" />
+      <File FileName="IMDBApp/Program.cs" Line="24" Column="48" />
       <File FileName="IMDBApp/Properties/launchSettings.json" />
     </Files>
     <Pads>
@@ -19,13 +17,12 @@
         <State name="__root__">
           <Node name="IMDBApp" expanded="True">
             <Node name="IMDBApp" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="ActorController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Modules" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Repository" expanded="True" />
               <Node name="Service" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

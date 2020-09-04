@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Configuration.Assemblies;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -18,8 +19,15 @@ namespace IMDBApp
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+              .ConfigureAppConfiguration((hostingContext, config) =>
+              {
+                  config.AddJsonFile("appsettings.json",
+                    optional: true,
+                    reloadOnChange: true);
+              })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+          
                     webBuilder.UseStartup<Startup>();
                 });
     }

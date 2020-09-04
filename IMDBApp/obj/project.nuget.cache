@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "xnvPLZ8GcIRocE0uJ7FfUgrTd4SdK0NVKU2EIvpK7zR6/5uaxnWyW80JcQ9KwlHKxgP75XTd4tRseqWL5gmdFA==",
+  "dgSpecHash": "No7PJfQ9tUbyjHRUL9cjpgd577p43MlMma2DTzQzFM+WU9xhErsp8mjDxsD5+7qpnxtxeBtm2q6GIgtQrk1Ecw==",
   "success": true,
   "projectFilePath": "/Users/ishwar/Desktop/WORK/Personal Coding Projects/NET/IMDBApp/IMDBApp/IMDBApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/ishwar/.nuget/packages/microsoft.extensions.configuration/3.1.7/microsoft.extensions.configuration.3.1.7.nupkg.sha512",
+    "/Users/ishwar/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.7/microsoft.extensions.configuration.abstractions.3.1.7.nupkg.sha512",
+    "/Users/ishwar/.nuget/packages/microsoft.extensions.configuration.fileextensions/3.1.7/microsoft.extensions.configuration.fileextensions.3.1.7.nupkg.sha512",
+    "/Users/ishwar/.nuget/packages/microsoft.extensions.configuration.json/3.1.7/microsoft.extensions.configuration.json.3.1.7.nupkg.sha512",
+    "/Users/ishwar/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.7/microsoft.extensions.fileproviders.abstractions.3.1.7.nupkg.sha512",
+    "/Users/ishwar/.nuget/packages/microsoft.extensions.fileproviders.physical/3.1.7/microsoft.extensions.fileproviders.physical.3.1.7.nupkg.sha512",
+    "/Users/ishwar/.nuget/packages/microsoft.extensions.filesystemglobbing/3.1.7/microsoft.extensions.filesystemglobbing.3.1.7.nupkg.sha512",
+    "/Users/ishwar/.nuget/packages/microsoft.extensions.primitives/3.1.7/microsoft.extensions.primitives.3.1.7.nupkg.sha512"
+  ],
   "logs": []
 }
