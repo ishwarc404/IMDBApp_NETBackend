@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net;
-//linq
+using System.Data.SqlClient;//linq
 
 namespace IMDBApp
 {

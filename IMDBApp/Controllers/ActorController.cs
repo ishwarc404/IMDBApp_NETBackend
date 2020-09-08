@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc; //important
 using Microsoft.Extensions.Logging;
 using System.Net;
+using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Configuration; //used for the configuration file
 
 namespace IMDBApp.Controllers
@@ -17,20 +18,28 @@ namespace IMDBApp.Controllers
     {
         private readonly IActorService _actorService;
         private readonly IConfiguration _configuration;
-        public ActorController(IActorService actorService, IConfiguration configuration)
+        private readonly IOptions<MySettings> _settings;
+        public ActorController(IActorService actorService, IConfiguration configuration,IOptions<MySettings> settings)
         {
             _actorService = actorService;
             _configuration = configuration; //this is needed initially
+            _settings = settings;
+          
         }
         [HttpGet]
-        public Actor Get()
+        public String Get()
         {
-            return _actorService.Get();
+            // return "Hello";
+            return _settings.Value.DBConnectionString;
+            // return _actorService.Get();
 
-            //using the config keyshere
-            // var keyA = _configuration["CustomKeys:KeyA"];
-            // var keyB = _configuration["CustomKeys:KeyB"];
-            // return new string[] { keyA, keyB };
+
+            //the following way is one way to using appsettings.json - program.cs comes into play
+            //var databaseOptions = new DatabaseCredentials();
+           // _configuration.GetSection(DatabaseCredentials.ConnectionKeys).Bind(databaseOptions);
+            //basically get the section in configuration and bind it with that object
+
+            // return databaseOptions.FirstName + " " + databaseOptions.LastName;
         }
 
         [HttpPost]

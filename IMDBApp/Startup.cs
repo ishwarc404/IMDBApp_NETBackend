@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace IMDBApp
 {
@@ -18,6 +19,9 @@ namespace IMDBApp
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+           .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -30,8 +34,9 @@ namespace IMDBApp
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<IActorRepository, ActorRepository>();
             services.AddScoped<IMovieRepository, MovieRepository>();
-            
- }
+            services.Configure<MySettings>(Configuration.GetSection("ConnectionKeys"));
+
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

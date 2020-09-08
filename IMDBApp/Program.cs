@@ -19,12 +19,12 @@ namespace IMDBApp
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-              .ConfigureAppConfiguration((hostingContext, config) =>
-              {
-                  config.AddJsonFile("appsettings.json",
-                    optional: true,
-                    reloadOnChange: true);
-              })
+            //   .ConfigureAppConfiguration((hostingContext, config) =>
+            //   {
+            //       config.AddJsonFile("appsettings.json",
+            //         optional: true,
+            //         reloadOnChange: true);
+            //   })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
           

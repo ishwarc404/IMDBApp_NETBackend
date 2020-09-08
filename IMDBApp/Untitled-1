@@ -2,3 +2,13 @@
 //appsetting.json - add connection string to db - extract it via modal class
 //install nuget for s3 sdk - test it out
 //form data -> byte array -> magick image -> s3
+
+specflow
+xunit
+
+scenarios for adpreviewtool - top
+
+-----
+adpreviewtool
+
+

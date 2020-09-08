@@ -26,3 +26,5 @@
 /Users/ishwar/Desktop/WORK/Personal Coding Projects/NET/IMDBApp/IMDBApp/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileSystemGlobbing.dll
 /Users/ishwar/Desktop/WORK/Personal Coding Projects/NET/IMDBApp/IMDBApp/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
 /Users/ishwar/Desktop/WORK/Personal Coding Projects/NET/IMDBApp/IMDBApp/obj/Debug/netcoreapp3.1/IMDBApp.csproj.CopyComplete
+/Users/ishwar/Desktop/WORK/Personal Coding Projects/NET/IMDBApp/IMDBApp/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/ishwar/Desktop/WORK/Personal Coding Projects/NET/IMDBApp/IMDBApp/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
