@@ -7,9 +7,11 @@ using Microsoft.Extensions.Logging;
 using System.Net;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Configuration; //used for the configuration file
-using System.Net.Http;
+//using System.Net.Http;
 using System.Web;
-using System.Net.Http.Headers;
+
+
+using Microsoft.AspNetCore.Http;
 
 namespace IMDBApp.Controllers
 {
@@ -30,15 +32,11 @@ namespace IMDBApp.Controllers
 
         }
         [HttpGet]
+
         public String Get()
         {
 
-
-
-
             return _settings.Value.DBConnectionString;
-
-
 
             //the following way is one way to using appsettings.json - program.cs comes into play
             //var databaseOptions = new DatabaseCredentials();
@@ -49,21 +47,15 @@ namespace IMDBApp.Controllers
         }
 
         [HttpPost]
-        // public void Post(Actor newActor)
-        // {
-        //     _actorService.Add(newActor);
-        // }
-
-        public void Upload()
+        public IActionResult MyFileUpload(IFormFile myFile)
         {
 
-            // var file = Request.Form.Files[0];
-            // Console.WriteLine(file);
-            var correlationId = HttpContext.Request;
+            var FileName = myFile.FileName;
+            return Ok(FileName);
 
-            //var name = ContentDispositionValue.Parse(file.ContentDisposition).FileName;
 
         }
+
     }
 
 
