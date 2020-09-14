@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{2DFAA04A-25C9-48D2-B8D0-F7C08B862F98}|IMDBApp">
   <MonoDevelop.Ide.Workbench ActiveDocument="IMDBApp/Program.cs">
     <Files>
-      <File FileName="IMDBApp/Startup.cs" Line="43" Column="13" />
-      <File FileName="IMDBApp/appsettings.json" Line="12" Column="21" />
+      <File FileName="IMDBApp/Startup.cs" Line="43" Column="10" />
+      <File FileName="IMDBApp/appsettings.json" />
       <File FileName="IMDBApp/Modules/Actor.cs" />
       <File FileName="IMDBApp/Modules/Movie.cs" />
-      <File FileName="IMDBApp/Controllers/ActorController.cs" Line="27" Column="1" />
+      <File FileName="IMDBApp/Controllers/ActorController.cs" />
       <File FileName="IMDBApp/Service/ActorService.cs" />
       <File FileName="IMDBApp/Service/MovieService.cs" />
       <File FileName="IMDBApp/Controllers/MovieController.cs" />

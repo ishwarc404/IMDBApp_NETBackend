@@ -7,6 +7,9 @@ using Microsoft.Extensions.Logging;
 using System.Net;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Configuration; //used for the configuration file
+using System.Net.Http;
+using System.Web;
+using System.Net.Http.Headers;
 
 namespace IMDBApp.Controllers
 {
@@ -19,35 +22,51 @@ namespace IMDBApp.Controllers
         private readonly IActorService _actorService;
         private readonly IConfiguration _configuration;
         private readonly IOptions<MySettings> _settings;
-        public ActorController(IActorService actorService, IConfiguration configuration,IOptions<MySettings> settings)
+        public ActorController(IActorService actorService, IConfiguration configuration, IOptions<MySettings> settings)
         {
             _actorService = actorService;
             _configuration = configuration; //this is needed initially
             _settings = settings;
-          
+
         }
         [HttpGet]
         public String Get()
         {
-            // return "Hello";
+
+
+
+
             return _settings.Value.DBConnectionString;
-            // return _actorService.Get();
+
 
 
             //the following way is one way to using appsettings.json - program.cs comes into play
             //var databaseOptions = new DatabaseCredentials();
-           // _configuration.GetSection(DatabaseCredentials.ConnectionKeys).Bind(databaseOptions);
+            // _configuration.GetSection(DatabaseCredentials.ConnectionKeys).Bind(databaseOptions);
             //basically get the section in configuration and bind it with that object
 
             // return databaseOptions.FirstName + " " + databaseOptions.LastName;
         }
 
         [HttpPost]
-        public void Post(Actor newActor)
+        // public void Post(Actor newActor)
+        // {
+        //     _actorService.Add(newActor);
+        // }
+
+        public void Upload()
         {
-            _actorService.Add(newActor);
+
+            // var file = Request.Form.Files[0];
+            // Console.WriteLine(file);
+            var correlationId = HttpContext.Request;
+
+            //var name = ContentDispositionValue.Parse(file.ContentDisposition).FileName;
+
         }
-
-
     }
+
+
+
+
 }
